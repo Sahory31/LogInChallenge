@@ -2,11 +2,14 @@ import React, {Component} from 'react';
 import 'firebase/auth'; 
 import firebaseApi from '../controller/database';
 
+
+
 class LogInForm extends Component{
 
     constructor(props){
         super(props);
         this.logIn = this.logIn.bind(this);
+        this.signUp = this.signUp.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.state ={
             email: '',
@@ -16,7 +19,49 @@ class LogInForm extends Component{
         }
     }
       
+    validateForm = () =>{
+        let emailError = '';
+        let passwordError = '';
+        let emailRegEx = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+
+        if (!this.state.email.match(emailRegEx)){
+            emailError = 'Invalid E-mail';
+        }
+
+        if (this.state.password.length < 6) {
+            passwordError = 'Password required at least 6 characters';
+        }
+
+        if (!this.state.password) {
+            passwordError = 'Password cannot be empty';
+        }
+
+        if (this.state.password.includes(' ')) {
+            passwordError = 'Password cannot have spaces';
+        }
+
+        if (emailError || passwordError){
+            this.setState({emailError, passwordError});
+            return false; 
+        }
+
+        return true;
+    }; 
+
     logIn(e){
+        e.preventDefault();
+        const resetState ={
+            email: '',
+            password: '',
+            emailError: '',
+            passwordError: ''
+        };
+
+        const validate = this.validateForm();
+        if (validate) {
+            this.setState(resetState);
+
+        }
         e.preventDefault();
         firebaseApi.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
         }).catch((error)=> {
@@ -24,11 +69,21 @@ class LogInForm extends Component{
         });
     }
 
-    handleChange(e){
-        this.setState({ [e.target.name] : e.target.value});
+    signUp(e){
+        
+
+        e.preventDefault();
+        firebaseApi.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).catch((error)=> {
+            console.log(error);
+        });
     }
 
-    validateForm = () =>{
+    handleChange(e){
+        this.setState({ [e.target.name] : e.target.value});
+        
+    }
+
+   /* validateForm = () =>{
         let emailError = '';
         let passwordError = '';
         let emailRegEx = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
@@ -73,7 +128,7 @@ class LogInForm extends Component{
         }
        
 
-    };
+    };*/
 
   
 
@@ -110,7 +165,8 @@ class LogInForm extends Component{
                       <div className='passwordError'>{this.state.passwordError}</div>
                   </div>
                   <div className="logIn">
-                    <button onClick={this.logIn}  type= 'submit' sclassName='signInBtn'> Log In </button>
+                    <button onClick={this.logIn}  type= 'submit' className='signInBtn'> Log In </button>
+                    <button onClick={this.signUp}  type= 'submit' className='signUpBtn'> signUp </button>
                   </div>
               </form>
           </div>
