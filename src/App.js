@@ -10,7 +10,8 @@ class App extends Component{
     constructor(props){
         super(props);
         this.state = {
-            user: {},
+            loading: true,
+            user: null,
         }
     }
 
@@ -20,23 +21,42 @@ class App extends Component{
 
     authListener(){
         firebaseApi.auth().onAuthStateChanged((user) => {
-            //console.log(user);
             if (user){
                 this.setState({ user });
-            //    localStorage.setItem('user', user.uid);
+                this.setState({ loading: false });
             } else {
-                this.setState({ user: null }); 
-            //    localStorage.removeItem('user');
+                this.setState({ user : null }); 
+                this.setState({ loading: false });
             }
         });
     }
 
     render (){
-        return(
-            <div className='App'>
-                {this.state.user ? (<HomePage />) : (<LogInForm />)}
-            </div>
-        );
+        if(this.state.loading){
+            return(
+                <div className='logInWindow'>
+                    Loading ...
+                </div>
+                
+            )
+        }
+        else if(this.state.user == null){
+            return(
+                <div className='logInWindow'>
+                    <LogInForm/>
+                </div>
+                
+            )
+        } 
+        else {
+            return(
+                <div className='successWindow'>
+                    <HomePage />
+                </div>
+            )
+        }
+        
+        
     }
 }
    
