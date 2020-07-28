@@ -25,7 +25,7 @@ To enter the main screen, the user must enter their email and password, the fiel
 
 ### Forgot password?
 
-![forgotPassword](ReadMe Imgs/forgotPassword.jpg)
+![forgotPassword](ReadMeImgs/forgotPassword.jpg)
 
 The link "forgot password" is located just below the space for the password, when you press on the text automatically a field opens to enter the email of the account you want to recover the password and when you press the "send" button it will automatically send an email to your account registered in the database.
 
