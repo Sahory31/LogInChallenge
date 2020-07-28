@@ -2,7 +2,7 @@
   "name": "login_blackfor",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Sahory31/LogInChallenge",
+  "homepage": "https://Sahory31.github.io/LogInChallenge",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@testing-library/jest-dom": "^4.2.4",
