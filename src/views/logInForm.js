@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
 import 'firebase/auth'; 
 import firebaseApi from '../controller/database';
-import LogoHG from'../styles/img/logoHG.png';
+import LogoHG from '../styles/img/logoHG.png';
+//import CarouselApp from './carousel';
 import '../styles/logIn.css';
 
 
-
 class LogInForm extends Component{
+
+    
 
     constructor(props){
         super(props);
@@ -14,6 +16,8 @@ class LogInForm extends Component{
         this.signUp = this.signUp.bind(this);
         this.changePassword = this.changePassword.bind(this);
         this.handleChange = this.handleChange.bind(this);
+        this.handleChangeNewPassword = this.handleChangeNewPassword.bind(this);
+        this.showChangePasswordInput = this.showChangePasswordInput.bind(this);
         this.state ={
             email: '',
             password: '',
@@ -21,16 +25,27 @@ class LogInForm extends Component{
         }
 
         this.state = { checked : false}
+        
     }
-    
-    changePassword(e){
-        console.log(this.state.emailRestore);
-        e.preventDefault();
-        firebaseApi.auth().sendPasswordResetEmail(this.state.emailRestore).then(function() {
-            // Email sent.
-          }).catch(function(error) {
-            console.log(error);
-          });
+     
+    handleChangeNewPassword(e){
+
+        this.setState({ 
+            emailRestore : e.target.value,
+            
+        });
+    };
+
+    handleChange(e){
+
+        const input = e.target.type === 'input';
+        this.setState({    //establecer el estado
+            
+            [e.target.name]: input
+            ? e.targe.checked
+            : e.target.value
+            
+        });
     }
 
     validateForm = () =>{
@@ -59,7 +74,7 @@ class LogInForm extends Component{
     }; 
 
     logIn(e){
-
+        
         e.preventDefault();
         const resetState ={
             email: '',
@@ -104,21 +119,14 @@ class LogInForm extends Component{
           });
     }
 
-    
-
-    handleChange(e){
-        this.setState({ [e.target.name] : e.target.value});
-        const checkbox = e.target.type === 'checkbox';
-        this.setState({    //establecer el estado
-            [e.target.name]: checkbox
-            ? e.target.checked
-            : e.target.value
-        });
-    };
-
-    handleChangeChecked(checked){
-        this.setState({checked});
-        
+    changePassword(e){
+        e.preventDefault();
+        console.log(this.state.emailRestore);
+        firebaseApi.auth().sendPasswordResetEmail(this.state.emailRestore).then(function() {
+            // Email sent.
+          }).catch(function(error) {
+            console.log(error);
+          });
     }
 
     handleChangeCheckedSignUp(checked){
@@ -126,17 +134,20 @@ class LogInForm extends Component{
         
     }
 
+    showChangePasswordInput(){
+        
+        document.getElementById("showInput").style.visibility = "visible";
+    }
+
 
    render(){
     return(
         <div className='auth'>
           <div className='signIn-form'>
-              <h1 className='signInTitle' hidden={this.state.checked ? true : false}>Log In</h1>
-              <h1 className='signUpTitle' hidden={this.state.checked ? false : true}>Sign Up</h1>
               <img className='logo' src={LogoHG} alt='logo'/>
               <form>
                   <div className='email'>
-                      <label htmlFor='email' className='emailLabel'>E-mail</label>
+                      <label htmlFor='email' className='emailLabel' style={{textAlign: 'left'}}>E-mail</label>
                       <br/>
                       <input 
                       value={this.state.email}
@@ -175,26 +186,28 @@ class LogInForm extends Component{
                   </div>
                   <div>
                     <input name='remember' type='checkbox' defaultChecked/>
-                    <label>Remember me</label>
-                    <button onClick={() => this.handleChangeChecked(true)}>Forgot Password?</button>
+                    <label className='rememberMe'> Remember Me &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label  className='forgotPassword'
+                    onClick={this.showChangePasswordInput} 
+                    style={{color: "blue"}}><b>&nbsp;&nbsp;&nbsp;&nbsp;Forgot Password? </b></label>
                     <br/>
-                    <div className='hiddenInput' >
-                    <label htmlFor='email' className='changePassword'>E-mail</label>
-                      <input 
-                      value={this.state.emailRestore}
+                    <div className='hiddenInput' id='showInput' style={{visibility: "hidden"}}>
+                      <input
                       type='email' 
                       placeholder="e-mail@" 
                       className='emailChangePasswordInput'
                       name='emailChangePasswordInput'
+                      onChange={this.handleChangeNewPassword}
                       /> 
                       <button className='sendEmail' type='submit' onClick={this.changePassword}>Send E-mail</button>
                     </div>
                   </div>
               </form>
               <div className='signUp'>
-                <p onClick={() => this.handleChangeCheckedSignUp(true)}>Don't you have an account yet? Join Hire Ground</p>
+                <p className='dontYouHaveAccount' onClick={() => this.handleChangeCheckedSignUp(true)}>Don't you have an account yet? <b style={{color: "blue"}}>Join Hire Ground</b></p>
               </div>
-          </div>
+          </div>  
+          
       </div>
     );
    }
