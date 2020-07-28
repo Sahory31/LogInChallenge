@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/LogInChallenge/static/css/main.f236e227.chunk.css",
+    "main.css": "/LogInChallenge/static/css/main.4cc54b6c.chunk.css",
     "main.js": "/LogInChallenge/static/js/main.60116212.chunk.js",
     "main.js.map": "/LogInChallenge/static/js/main.60116212.chunk.js.map",
     "runtime-main.js": "/LogInChallenge/static/js/runtime-main.d776a670.js",
@@ -8,9 +8,9 @@
     "static/js/2.bca71895.chunk.js": "/LogInChallenge/static/js/2.bca71895.chunk.js",
     "static/js/2.bca71895.chunk.js.map": "/LogInChallenge/static/js/2.bca71895.chunk.js.map",
     "index.html": "/LogInChallenge/index.html",
-    "precache-manifest.508f329db9a3864231b184b9add3346b.js": "/LogInChallenge/precache-manifest.508f329db9a3864231b184b9add3346b.js",
+    "precache-manifest.1e1c1cdf99c94bdc0f96ce822831734d.js": "/LogInChallenge/precache-manifest.1e1c1cdf99c94bdc0f96ce822831734d.js",
     "service-worker.js": "/LogInChallenge/service-worker.js",
-    "static/css/main.f236e227.chunk.css.map": "/LogInChallenge/static/css/main.f236e227.chunk.css.map",
+    "static/css/main.4cc54b6c.chunk.css.map": "/LogInChallenge/static/css/main.4cc54b6c.chunk.css.map",
     "static/js/2.bca71895.chunk.js.LICENSE.txt": "/LogInChallenge/static/js/2.bca71895.chunk.js.LICENSE.txt",
     "static/media/computer.png": "/LogInChallenge/static/media/computer.f5988b40.png",
     "static/media/logoHG.png": "/LogInChallenge/static/media/logoHG.4d65b8f7.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.d776a670.js",
     "static/js/2.bca71895.chunk.js",
-    "static/css/main.f236e227.chunk.css",
+    "static/css/main.4cc54b6c.chunk.css",
     "static/js/main.60116212.chunk.js"
   ]
 }
