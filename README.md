@@ -31,13 +31,13 @@ The link "forgot password" is located just below the space for the password, whe
 
 ### Don't you have an Account yet?
 
-![newAccount](ReadMe Imgs/signUp.jpg)
+![newAccount](ReadMeImgs/signUp.jpg)
 
 The link for 'Don't you have an account yet?' allows the user to register with their email and a password. When pressing the text, the "Log in" button changes to the 'Sign up' button. Pressing the button sends the form, creates an account and automatically accesses the main screen.
 
 ### Main Screen
 
-![successWindow](ReadMe Imgs/mainPage.jpg)
+![successWindow](ReadMeImgs/mainPage.jpg)
 
 On the main screen, a "log Out" button was added, because the function you use for the logIn is a function that reminds the logged-in user even though the page refreshes. So to exit the main screen the user needs to press the "log Out" button
 
