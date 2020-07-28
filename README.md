@@ -31,8 +31,8 @@ To Data management, like register and log In sesion or change the password: [Fir
 
 To versions management: [Git](https://git-scm.com/), & [GitHub](https://github.com/).
 
-And [NodeJs] (https://nodejs.org/es/)for the management of the locallHost & [NPM] (https://www.npmjs.com/) to package managements
+And [NodeJs] (https://nodejs.org/es/) for the management of the locallHost & [NPM] (https://www.npmjs.com/) to package managements
 
 ### Deployment
 
-You can see this project on: https://facebook.github.io/create-react-app/docs/deployment
+You can see this project on: https://sahory31.github.io/LogInChallenge/
