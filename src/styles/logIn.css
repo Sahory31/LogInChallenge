@@ -4,7 +4,7 @@
 
 .auth{
     background-color: white;
-    border-radius: 3% 0% 0% 3%;
+    border-radius: 2% 0% 0% 2%;
     padding-top: 10%;
 }
 
@@ -12,7 +12,7 @@
     background-color: #FFF;
     padding-top: 2%;
     text-align: center;
-    border-radius: 5% 0% 0% 5%;
+    border-radius: 2% 0% 0% 2%;
 }
 
 .email, .password{
