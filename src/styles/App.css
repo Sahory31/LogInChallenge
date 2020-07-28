@@ -1,0 +1,20 @@
+
+.description, .information{
+    color: white;
+}
+
+.computer{
+    height: 50%;
+}
+
+.container{
+  font-size: 1em;
+  align-items: flex-end;
+  height: auto;
+  padding-left: 10%;
+  margin-left: 10%;
+  padding-top: 10%;
+  text-align: center;
+}
+
+
