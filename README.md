@@ -1,68 +1,38 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), & [Firebase](https://firebase.google.com/)
 
-## Available Scripts
+## PROJECT DESCRIPTION:
 
-In the project directory, you can run:
+his project is a login view in which the user can interact with the fields to enter the main screen. It also has a link where you need to enter your email address to change your password. And in case the user is not registered, he can register with his email and password.
 
-### `npm start`
+### Log In
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+To enter the main screen, the user must enter their email and password, the fields are validated so that the fields are not sent empty, with an 'invalid' email or a very short password. In case the user is not registered in the database, the form will not be sent and you will not be able to access the main screen.
 
-### `npm test`
+### Forgot password?
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The link "forgot password" is located just below the space for the password, when you press on the text automatically a field opens to enter the email of the account you want to recover the password and when you press the "send" button it will automatically send an email to your account registered in the database.
 
-### `npm run build`
+### Don't you have an Account yet?
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The link for 'Don't you have an account yet?' allows the user to register with their email and a password. When pressing the text, the "Log in" button changes to the 'Sign up' button. Pressing the button sends the form, creates an account and automatically accesses the main screen.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Main Screen
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+On the main screen, a "log Out" button was added, because the function you use for the logIn is a function that reminds the logged-in user even though the page refreshes. So to exit the main screen the user needs to press the "log Out" button
 
-### `npm run eject`
+## Technologies
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+some of the technologies that were used to create this project were:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To create this project: [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To Data management, like register and log In sesion or change the password: [Firebase](https://firebase.google.com/).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To versions management: [Git](https://git-scm.com/), & [GitHub](https://github.com/).
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+And [NodeJs] (https://nodejs.org/es/)for the management of the locallHost & [NPM] (https://www.npmjs.com/) to package managements
 
 ### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+You can see this project on: https://facebook.github.io/create-react-app/docs/deployment
