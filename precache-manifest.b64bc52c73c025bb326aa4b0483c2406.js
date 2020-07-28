@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ae85ae766e0c92b4f59c332cf7a0e440",
+    "revision": "fbdf89592c6613a3afb64576ad6a3b10",
     "url": "/Sahory31/LogInChallenge/index.html"
   },
   {
-    "revision": "576664669ba2e0ef961d",
-    "url": "/Sahory31/LogInChallenge/static/css/main.7fb84e0c.chunk.css"
+    "revision": "79304eba05e99d308b74",
+    "url": "/Sahory31/LogInChallenge/static/css/main.05808ac8.chunk.css"
   },
   {
     "revision": "53fbea2c33614dcc82d2",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Sahory31/LogInChallenge/static/js/2.c3f690ae.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "576664669ba2e0ef961d",
+    "revision": "79304eba05e99d308b74",
     "url": "/Sahory31/LogInChallenge/static/js/main.3b63ad28.chunk.js"
   },
   {

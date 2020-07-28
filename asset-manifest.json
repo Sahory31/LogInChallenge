@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Sahory31/LogInChallenge/static/css/main.7fb84e0c.chunk.css",
+    "main.css": "/Sahory31/LogInChallenge/static/css/main.05808ac8.chunk.css",
     "main.js": "/Sahory31/LogInChallenge/static/js/main.3b63ad28.chunk.js",
     "main.js.map": "/Sahory31/LogInChallenge/static/js/main.3b63ad28.chunk.js.map",
     "runtime-main.js": "/Sahory31/LogInChallenge/static/js/runtime-main.906edaed.js",
@@ -8,9 +8,9 @@
     "static/js/2.c3f690ae.chunk.js": "/Sahory31/LogInChallenge/static/js/2.c3f690ae.chunk.js",
     "static/js/2.c3f690ae.chunk.js.map": "/Sahory31/LogInChallenge/static/js/2.c3f690ae.chunk.js.map",
     "index.html": "/Sahory31/LogInChallenge/index.html",
-    "precache-manifest.8bc88c484426668a154d5e00f2c0b308.js": "/Sahory31/LogInChallenge/precache-manifest.8bc88c484426668a154d5e00f2c0b308.js",
+    "precache-manifest.b64bc52c73c025bb326aa4b0483c2406.js": "/Sahory31/LogInChallenge/precache-manifest.b64bc52c73c025bb326aa4b0483c2406.js",
     "service-worker.js": "/Sahory31/LogInChallenge/service-worker.js",
-    "static/css/main.7fb84e0c.chunk.css.map": "/Sahory31/LogInChallenge/static/css/main.7fb84e0c.chunk.css.map",
+    "static/css/main.05808ac8.chunk.css.map": "/Sahory31/LogInChallenge/static/css/main.05808ac8.chunk.css.map",
     "static/js/2.c3f690ae.chunk.js.LICENSE.txt": "/Sahory31/LogInChallenge/static/js/2.c3f690ae.chunk.js.LICENSE.txt",
     "static/media/computer.png": "/Sahory31/LogInChallenge/static/media/computer.f5988b40.png",
     "static/media/logoHG.png": "/Sahory31/LogInChallenge/static/media/logoHG.4d65b8f7.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.906edaed.js",
     "static/js/2.c3f690ae.chunk.js",
-    "static/css/main.7fb84e0c.chunk.css",
+    "static/css/main.05808ac8.chunk.css",
     "static/js/main.3b63ad28.chunk.js"
   ]
 }

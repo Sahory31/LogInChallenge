@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Sahory31/LogInChallenge/precache-manifest.8bc88c484426668a154d5e00f2c0b308.js"
+  "/Sahory31/LogInChallenge/precache-manifest.b64bc52c73c025bb326aa4b0483c2406.js"
 );
 
 self.addEventListener('message', (event) => {
