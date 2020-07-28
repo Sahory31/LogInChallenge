@@ -1,8 +1,6 @@
 body {
   background-color: #dee4f0;
+  font-family: 'Roboto', sans-serif;
+  margin: 5% 3% 5% 3%;
 }
 
-code {
-  font-family: 'Roboto',source-code-pro, Menlo, Monaco, Consolas,
-    monospace;
-}
