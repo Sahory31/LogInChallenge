@@ -1,0 +1,107 @@
+.logo{
+    width: 40%;
+}
+
+.auth{
+    background-color: white;
+    border-radius: 5% 0% 0% 5%;
+    padding-top: 10%;
+}
+
+.signIn-form{
+    background-color: #FFF;
+    padding-top: 2%;
+    text-align: center;
+    border-radius: 5% 0% 0% 5%;
+}
+
+.email, .password{
+    padding: 2%;
+    margin: 1% 0% 1% 30%;
+    width: 60%;
+    text-align: left; 
+}
+
+.emailInput, .passwordInput{
+    background-color: #FFF;
+    margin-top:3%;
+    padding: 1%;
+    text-align: left;
+    width:70%;
+    border-radius: 5%;
+    box-sizing: content-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: .8em;
+    border: none;
+    box-shadow: 0 1px 7px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);   
+}
+
+label{
+    width: 50%;
+    text-align: left;
+    font-size: .9em;
+    padding: 0% 0% 10% 0%;
+}
+
+.logInBtn, .signUpBtn {
+    background-color: #4164e3;
+    width: 45%;
+    color: #FFF;
+    text-align: center;
+    padding: 1.5%;
+    margin: 1% 5% 3% 12%;
+    border-radius: 4%;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.signUpBtn {
+    background-color: #61088a;
+    width: 45%;
+    color: #FFF;
+    text-align: center;
+    padding: 1.5%;
+    margin: 1% 5% 3% 12%;
+    border-radius: 4%;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.hiddenInput{
+    margin: 3% 0% 10% 0;
+}
+
+.emailChangePasswordInput{
+    background-color: #FFF;
+    padding: 1.5%;
+    text-align: left;
+    width:40%;
+    border-radius: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-size: .8em;
+    border: none;
+    box-shadow: 0 1px 7px rgba(145, 25, 201, 0.16), 0 3px 6px rgba(155, 19, 173, 0.23);
+}
+
+.sendEmail{
+    background-color: #4164e3;
+    width: 25%;
+    color: #FFF;
+    text-align: center;
+    padding: 1%;
+    margin: 1% 2% 3% 5%;
+    border-radius: 4%;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.rememberMe, .forgotPassword, .dontYouHaveAccount{
+    font-size: 0.8em;
+}
+
