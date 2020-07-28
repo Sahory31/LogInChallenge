@@ -1,0 +1,17 @@
+.logOut{
+    background-color: #4164e3;
+    width: 10%;
+    color: #FFF;
+    text-align: center;
+    padding: 1%;
+    border-radius: 4%;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.success{
+    text-align: center;
+    font-weight: bold;
+}
