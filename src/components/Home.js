@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import firebaseApi from '../controller/database';
+import '../styles/home.css';
 
 class HomePage extends Component {
     constructor(props){
