@@ -2,13 +2,10 @@ import React, {Component} from 'react';
 import 'firebase/auth'; 
 import firebaseApi from '../controller/database';
 import LogoHG from '../styles/img/logoHG.png';
-//import CarouselApp from './carousel';
 import '../styles/logIn.css';
 
 
 class LogInForm extends Component{
-
-    
 
     constructor(props){
         super(props);
@@ -205,9 +202,8 @@ class LogInForm extends Component{
               </form>
               <div className='signUp'>
                 <p className='dontYouHaveAccount' onClick={() => this.handleChangeCheckedSignUp(true)}>Don't you have an account yet? <b style={{color: "blue"}}>Join Hire Ground</b></p>
-              </div>
-          </div>  
-          
+              </div>  
+          </div>
       </div>
     );
    }
